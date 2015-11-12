@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  
+  <header>
+    <div class="landing">
+      <div class="container">
+
+        <div class="row">
+          <div class="nine columns">
+
+            <h1>
+              <hr class = "hr_style1">
+              The <br> Becky Tarbotton Memorial Scholarship.
+             <hr class = "hr_style1">
+            </h1> 
+          </div>
+        </div>
+        {% include navbar.html %}
+      
+      </div>
+    </div> 
+  </header>
+
+
+
+
+  <body>
+
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        {{ content }}
+      </div>
+    </div>
+
+    {% include footer.html %}
+    {% include share_page.html %}
+
+  </body>
+
+</html>

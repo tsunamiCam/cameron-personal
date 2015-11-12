@@ -1,0 +1,321 @@
+
+
+/* Custom Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/*Body Text - override Skeleton default (Raleway) */
+
+body {
+  /*font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+  font-family: "Lato", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+
+
+
+
+/* Landing Page header styling */
+
+.landing {
+  background: linear-gradient(
+      rgba(50, 0, 0, 0.25),
+      rgba(50, 0, 0, 0.25)),
+    url('../images/revel-20.jpg') top center no-repeat;
+  background-size: cover;
+  min-height: 880px;
+  
+  /*height: 100vh;
+*/
+  background-attachment: fixed;
+
+
+}
+
+.landing hr.hr_style1 {
+  border-top: 3px solid #fff;
+  padding-bottom: 0em;
+  padding-top: 0em;
+  margin-bottom: 0.2em;
+  margin-top: 0.2em;
+
+
+
+}
+
+ .landing h1 {
+  color:#fff;
+  font-weight:400;
+  font-size:4.5em;
+  line-height: 1;
+  /*text-shadow: 0 1px 2px #000;*/
+  margin-bottom: 0.1em;
+  padding-top: 5.5em;
+ }
+
+  .landing p {
+  color:#fff;
+  font-size:1.33em;
+  line-height: 1.5;
+  /*text-shadow: 0 1px 2px #000;*/
+  margin-bottom: 1.2em;
+ }
+ .landing p strong {
+  color:#fff;
+ }
+
+/* Preamble */
+ 
+.header2 p {
+  color:#000;
+  font-size:1.25em;
+  line-height: 1.5;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+ /* The Scholarship */
+ .scholarship {
+  padding:2em 0 2em;
+  text-align: left;
+ }
+
+  .scholarship h2 {
+  color:#009be8;
+  font-weight: 300;
+ }
+
+  .scholarship p {
+  color:#9d9d9d;
+  font-size:1.1em;
+}
+
+
+ img {
+  max-width:100%;
+  height:auto;
+ }
+
+
+  /* Testimonials */
+ .testimonials {
+  padding:4em 0;
+  text-align: center;
+ }
+
+  .testimonials h2 {
+  color:#009be8;
+  font-weight: 300;
+ }
+ 
+ .testimonials p {
+  color:#9d9d9d;
+  font-size:1.2em;
+ }
+
+
+  .testimonials blockquote {
+  border: none;
+  text-align: left;
+  padding:0 1.5em 0 0;
+  font-size:1em;
+  color:#4d4d4d;
+  line-height: 1.4;
+  margin: 1em 0;
+ }
+
+  .testimonials .avatar img {
+  border-radius: 50%;
+  float:left;
+  display:inline;
+  margin-right:1em;
+  width:65px;
+  height:65px;
+ }
+
+  .testimonials .avatar p {
+  text-align: left;
+  padding-top:1em;
+  color:#5d5d5d;
+  font-weight: 900;
+ }
+
+ /* Apply Banner */
+ .apply_banner {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.1)),
+      url('../images/helliwell2.jpg') top center no-repeat;
+  background-size: cover;
+  width:100%;
+  padding-top: 7em;
+  padding-bottom: 7em;
+  text-align: center;
+  opacity: 60%;
+ }
+
+  .apply_banner h2 {
+  color:#fff;
+  font-weight:500;
+ }
+ 
+ .apply_banner p {
+  color:#fff;
+  font-size:1.2em;
+ }
+
+
+
+ .apply_banner .row {
+  margin-top:3em;
+ }
+
+.apply_banner ul li a {
+  color:#fff;
+  font-size:1.5em;
+  text-transform:uppercase;
+  text-decoration:none;
+  padding:0.75em 2em;
+  font-weight: 400;
+}
+ .apply_banner  ul li a.btn {
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px; /* border radius */
+  border:3px solid #fff;
+ }
+ .apply_banner  ul li a.btn:hover {
+  background:#fff;
+  color:#000;
+
+ }
+
+
+
+  /* Footer */
+ footer {
+  background:#fff;
+  padding: 1em 0;
+  padding-bottom: 0;
+ }
+
+ footer nav ul {
+  margin-top:0.5em;
+ }
+  footer nav ul li {
+  display:inline;
+  margin:0;
+ }
+
+ footer nav ul li a {
+  color:#000;
+  text-decoration:none;
+  text-transform: uppercase;
+  margin:0 1em 0 0;
+  font-size:1em;
+ }
+
+ footer img {
+  float:right;
+ }
+
+ 
+ footer p {
+  color:#000;
+  line-height: 1;
+  text-transform: uppercase;
+  font-size:0.7em;
+  margin-top:1.2em;
+ }
+
+
+  /* About Becky */
+  
+ .about-becky {
+  text-align: left;
+  padding:2em 0 2em;
+ }
+
+ .about-becky blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  margin-left: 2em;
+  margin-right: 4em;
+  padding: 0.5em 10px;
+  font-size: 1em;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+ .about-becky blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+ .about-becky blockquote p {
+  display: inline;
+}
+
+  .about-becky img {
+  border-radius: 50%;
+  float:left;
+  display:inline;
+  margin-right:1em;
+  width:100px;
+  height:100px;
+ }
+
+
+
+/* Readmore */
+.readmore {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: .1rem;
+  text-decoration: none;
+  line-height: 0.5rem;
+}
+
+/* About SCARP */
+ .about-scarp {
+  text-align: left;
+  padding:2em 0 2em;
+ }
+
+   .about-scarp img {
+  /*border-radius: 50%;*/
+  float:left;
+  display:inline;
+  margin-right:1em;
+  width: 20%;
+  height:20%;
+
+ }
+
+
+/* Dividing line */
+.dividing-line {
+  border-top: 1px solid #eee;
+  margin-bottom: 2rem;}
+
+
+
+
+/*Sharing buttons*/
+.share-page {
+    text-align: center;
+    background: #eee;
+    color: #000;
+    padding: 8px 15px;
+    border-radius: 5px;
+   /* margin: 1.5 * $spacing-unit 0;*/
+}
+.share-page a {
+
+        font-weight: 800;
+        color: #000;
+        margin-left: 10px;
+        text-decoration:none;
+
+    }
+
