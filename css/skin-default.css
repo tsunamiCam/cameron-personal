@@ -1,3 +1,4 @@
+.skin-default .navbar,
 .has-docked-nav .navbar {
     background: linear-gradient(
             rgba(0, 0, 0, 0.25),
@@ -7,3 +8,4 @@
 	width: 100%;
     background-attachment: fixed;
 }
+
