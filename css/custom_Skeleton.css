@@ -29,15 +29,7 @@
         display: block;
         width: 100%;
         height: 6.5rem;
-
-        /*background: #000;
-        opacity: 0.5; */
-
         z-index: 99;
-        /*border-top: 1px solid #eee;
-        border-bottom: 1px solid #eee; */
-
-
         margin-bottom: -6.5rem;
     }
 
@@ -75,14 +67,6 @@
         position: fixed;
         top: 0;
         left: 0;
-
-        background: linear-gradient(
-                rgba(0, 0, 0, 0.25),
-                rgba(0, 0, 0, 0.25)),
-        url('../images/revel-20.jpg') top center no-repeat;
-        background-size: cover;
-        width: 100%;
-        background-attachment: fixed;
     }
 
     /* Re-overiding the width 100% declaration to match size of % based container */
