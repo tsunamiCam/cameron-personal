@@ -18,6 +18,9 @@ $(document).ready(function() {
       }
 
     var width = $window.width()
+    var height = $window.height()
+
+    
 
   function init() {
     onScroll();
@@ -25,6 +28,10 @@ $(document).ready(function() {
     placeHeaderTxt();
     $window.on('scroll', onScroll)
     $window.on('resize', resize)
+
+    //Hard code the relative background size
+    $( ".landing" ).css( "height",  $( ".landing" ).height()); 
+
   }
 
   function smoothScroll(e) {
