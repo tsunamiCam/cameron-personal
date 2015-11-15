@@ -17,9 +17,12 @@ $(document).ready(function() {
         "/": '&#x2F;'
       }
 
+    var width = $window.width()
+
   function init() {
     onScroll();
     resize();
+    placeHeaderTxt();
     $window.on('scroll', onScroll)
     $window.on('resize', resize)
   }
@@ -38,8 +41,7 @@ $(document).ready(function() {
     });
   }
 
-
-  function resize() {
+  function placeHeaderTxt() {
 
     var headerHeight = $( ".landing" ).height();
     var textHeight = $( ".landing h1" ).height();
@@ -50,19 +52,23 @@ $(document).ready(function() {
         navbarHeight = $( ".navbar" ).height();
     }
 
-
     var availableSpace = 0.85 * (headerHeight - textHeight- navbarHeight);
-
-
-
     //Position the title on the landing page
     $( ".landing h1" ).css( "padding-top",  availableSpace); 
       
+  }
 
+
+  function resize() {
 
     $body.removeClass('has-docked-nav')
     navOffsetTop = $nav.offset().top
     onScroll()
+
+    if ($window.width() != width) {
+      placeHeaderTxt();
+      width = $window.width()
+    }
   }
 
   function onScroll() {
