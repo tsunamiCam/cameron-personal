@@ -21,8 +21,8 @@ body {
 }
 
 .landing {
-    /*height: 100vh;*/
-    min-height: 880px;
+    height: 100vh;
+    /*min-height: 880px;*/
 
 
 }
