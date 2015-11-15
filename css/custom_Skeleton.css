@@ -12,12 +12,12 @@
 }
 
 /* Larger than phone */
-@media (min-width: 550px) {
+/*@media (min-width: 550px) {
     .header {
         margin-top: 18rem;
     }
 }
-
+*/  
 /* Larger than tablet */
 @media (min-width: 750px) {
     /* Navbar */
@@ -74,6 +74,24 @@
     .has-docked-nav .navbar > .container {
         width: 80%;
     }
+
+    .landing {
+        background: linear-gradient(
+                rgba(50, 0, 0, 0.25),
+                rgba(50, 0, 0, 0.25)),
+        url('../images/revel-20-fullsize.jpg') top center no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+
+
+    }
+
+    .landing h1 {
+        font-size: 6rem ;
+    }
+
+
+
 
 }
 

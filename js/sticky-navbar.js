@@ -2,6 +2,13 @@
 
 $(document).ready(function() {
 
+
+var headerHeight = $( ".landing" ).height();
+
+$( ".landing h1" ).css( "padding-top",  headerHeight*0.60); // Setting an individual property.
+ 
+
+
   var  mn = $(".navbar"),
       mns = "has-docked-nav",
       navOffsetTop = $('nav').offset().top;
@@ -25,5 +32,8 @@ $(document).ready(function() {
        $('body').removeClass(mns);
     }
   });
+
+
+
 
 });
