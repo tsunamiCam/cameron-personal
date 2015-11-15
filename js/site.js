@@ -43,32 +43,33 @@ $(document).ready(function() {
 
   function placeHeaderTxt() {
 
+
     var headerHeight = $( ".landing" ).height();
     var textHeight = $( ".landing h1" ).height();
-    
-    var navbarHeight = 0;
-
-    if (!$body.hasClass('has-docked-nav')) {
-        navbarHeight = $( ".navbar" ).height();
-    }
-
-    var availableSpace = 0.85 * (headerHeight - textHeight- navbarHeight);
+    var availableSpace = 0.8 * (headerHeight - textHeight);
     //Position the title on the landing page
     $( ".landing h1" ).css( "padding-top",  availableSpace); 
+    
+    $body.removeClass('has-docked-nav')
+    navOffsetTop = $nav.offset().top
+    onScroll()
+
       
   }
 
 
   function resize() {
 
-    $body.removeClass('has-docked-nav')
-    navOffsetTop = $nav.offset().top
-    onScroll()
-
-    if ($window.width() != width) {
+  if ($window.width() != width) {
       placeHeaderTxt();
       width = $window.width()
     }
+  else {
+   $body.removeClass('has-docked-nav')
+    navOffsetTop = $nav.offset().top
+    onScroll()
+  }
+   
   }
 
   function onScroll() {
@@ -86,3 +87,10 @@ $(document).ready(function() {
   init();
 
 });
+
+
+$(window).on('beforeload', function() {
+    alert("Test")
+    //$(window).scrollTop(0);
+});
+
