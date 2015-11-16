@@ -83,7 +83,6 @@
         background-size: cover;
         background-attachment: fixed;
 
-
     }
 
     .landing h1 {
@@ -91,7 +90,12 @@
     }
 
 
+    /*Adjust figure margins for large devices*/
+    figure {
 
+            margin: 2em 3em 2em;
+
+    }
 
 }
 

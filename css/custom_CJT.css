@@ -36,6 +36,12 @@ blockquote p {
 }
 
 
+figure {
+
+        margin: 0em 0.5em 0em;
+        padding-bottom: 2em;
+
+}
 
 /* Landing Page header styling */
 
@@ -399,17 +405,15 @@ footer p {
 }
 
 
-
-
 .gallery {
-  background: #EEE;
+  background: #f9f9f9;
 }
 
 .gallery-cell {
   width: 100%;
-  height: 200px;
-  margin-right: 10px;
-  background: #8C8;
+  /*height: 400px;*/
+  margin-right: 0px;
+  background: #f9f9f9;
   counter-increment: gallery-cell;
 }
 
