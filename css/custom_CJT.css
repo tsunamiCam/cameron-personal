@@ -4,7 +4,8 @@
 
 body {
     /*font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
-    font-family: "Lato", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Work Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /*font-family: "Lato", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
 }
 
 
@@ -14,10 +15,11 @@ blockquote {
     background: #f9f9f9;
     border-left: 10px solid #ccc;
     margin: 1.5em 10px;
-    margin-left: 2em;
-    margin-right: 4em;
+    margin-left: 1em;
+    margin-right: 2em;
     padding: 0.5em 10px;
-    font-size: 1.1em;
+    font-size: 1em;
+    font-style: italic;
     quotes: "\201C" "\201D" ;
 }
 
@@ -416,4 +418,32 @@ footer p {
   background: #f9f9f9;
   counter-increment: gallery-cell;
 }
+
+
+
+
+.page-content  {
+    background: linear-gradient(
+            rgba(255, 255, 255, 0.2),
+            rgba(255, 255, 255, 1)),
+    url('../images/revel-20-fullsize.jpg') top center no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    height: 50vh;
+}
+
+.page-content h1 {
+    color: #000;
+    padding-top: 6em;
+    margin-bottom: 0em;
+}
+
+/*
+.becky-header p {
+    color: #000;
+    font-size: 1.33em;
+    line-height: 1.5;
+    margin-bottom: 1.2em;
+}*/
+
 

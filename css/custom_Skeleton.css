@@ -97,6 +97,13 @@
 
     }
 
+
+    blockquote {
+
+    margin-left: 2em;
+    margin-right: 4em;
+    }
+
 }
 
 /* Slick Nav - Media Query */
