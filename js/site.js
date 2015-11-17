@@ -31,13 +31,15 @@ $(document).ready(function() {
   function init() {
     onScroll();
     resize();
-    placeHeaderTxt();
+    placeHeaderTxt(".landing",0.75);
+    placeHeaderTxt(".post-header",0.85 );    
     $window.on('scroll', onScroll)
     $window.on('resize', resize)
 
     //Hard code the relative background size
     $( ".landing" ).css( "height",  $( ".landing" ).height()); 
 
+    $( ".post-header" ).css( "height",  $( ".post-header" ).height()); 
 
 
 
@@ -57,21 +59,21 @@ $(document).ready(function() {
     });
   }
 
-  function placeHeaderTxt() {
+  function placeHeaderTxt(parentClass, spacingFactor) {
 
 
-    var headerHeight = $( ".landing" ).height();
-    var textHeight = $( ".landing h1" ).height();
+    var headerHeight = $( parentClass ).height();
+    var textHeight = $( parentClass + " h1" ).height();
 
 
     if ($body.hasClass('has-docked-nav')) {
-      var availableSpace = 0.78 * (headerHeight - textHeight);
+      var availableSpace = spacingFactor * (headerHeight - textHeight);
     }
     else {
-        var availableSpace = 0.75 * (headerHeight - textHeight);
+        var availableSpace = spacingFactor * (headerHeight - textHeight);
     }
     //Position the title on the landing page
-    $( ".landing h1" ).css( "padding-top",  availableSpace); 
+    $( parentClass + " h1" ).css( "padding-top",  availableSpace); 
     
     $body.removeClass('has-docked-nav')
     navOffsetTop = $nav.offset().top
@@ -84,7 +86,8 @@ $(document).ready(function() {
   function resize() {
 
   if ($window.width() != width) {
-      placeHeaderTxt();
+      placeHeaderTxt(".landing", 0.75);
+      placeHeaderTxt(".post-header",0.8); 
       width = $window.width()
     }
   else {

@@ -487,6 +487,9 @@ img.bg{
     background-attachment: scroll;
     width: relative;
     height:80vh;
+    padding-bottom: 0;
+    margin-bottom: 0;
+
 
 }
 
@@ -494,7 +497,6 @@ img.bg{
 
 
     padding-top: 10rem;
-
 
 }
 
