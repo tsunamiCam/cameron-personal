@@ -482,11 +482,11 @@ img.bg{
     background: linear-gradient(
         rgba(0, 0, 0, 0),
         rgba(255, 255, 255, 1)),
-    url('../images/revel-20-fullsize.jpg') top center no-repeat;
+    url('../images/revel-20-mobile3.jpg') top center no-repeat;
     background-size: cover;
     background-attachment: scroll;
 
-    height:40em;
+    height:30em;
     padding-bottom: 0;
     margin-bottom: 0;
 
@@ -497,7 +497,7 @@ img.bg{
 .post-header h1 {
 
 
-    padding-top: 10rem;
+    padding-top: 10em;
 
 }
 
