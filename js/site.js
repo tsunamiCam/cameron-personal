@@ -108,6 +108,7 @@ $(document).ready(function() {
     
     if($('.page-content h1').offset() != null) {
       
+      var opac = 0.5;
       if ($window.scrollTop() <= headerOffsetStart) {
           opac =  0.5 * $window.scrollTop()/headerOffsetStart;
       }

@@ -4,7 +4,7 @@
 
 body {
     /*font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
-    font-family: "Work Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Lato", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
     /*font-family: "Lato", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
 }
 
@@ -434,8 +434,9 @@ footer p {
 
 .page-content h1 {
     color: #000;
-    padding-top: 0em
-    /*margin-bottom: 0em;*/
+    padding-top: 0em;
+
+
 }
 
 /*
@@ -450,8 +451,17 @@ footer p {
 
 .pickgradient{
   position:relative;
-  display:inline-block;
+   width: 100%; /* for IE 6 */
 }
+
+.pickgradient h1 { 
+   position: absolute; 
+   top: 200px; 
+   left: 0; 
+   width: 100%; 
+}
+
+
 .pickgradient:after {
   content:'';
   position:absolute;
@@ -466,3 +476,27 @@ img.bg{
 
   display:block;
 }
+
+
+.post-header {
+    background: linear-gradient(
+        rgba(0, 0, 0, 0),
+        rgba(255, 255, 255, 1)),
+    url('../images/revel-20-fullsize.jpg') top center no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    width: relative;
+    height:80vh;
+
+}
+
+.post-header h1 {
+
+
+    padding-top: 10rem;
+
+
+}
+
+
+
