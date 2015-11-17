@@ -29,6 +29,12 @@ $(document).ready(function() {
     
 
   function init() {
+    
+    $('.main-gallery').flickity({
+      // options
+      cellAlign: 'left',
+          contain: true
+    });
     onScroll();
     resize();
     placeHeaderTxt();
@@ -39,11 +45,6 @@ $(document).ready(function() {
     $( ".landing" ).css( "height",  $( ".landing" ).height()); 
 
 
-    $('.main-gallery').flickity({
-      // options
-      cellAlign: 'left',
-          contain: true
-    });
 
   }
 
@@ -105,7 +106,7 @@ $(document).ready(function() {
     
     if($('.page-content h1').offset() != null) {
       
-   
+
       if ($window.scrollTop() <= headerOffsetStart) {
           opac =  0.5 * $window.scrollTop()/headerOffsetStart;
       }
