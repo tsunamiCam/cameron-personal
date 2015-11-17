@@ -29,12 +29,6 @@ $(document).ready(function() {
     
 
   function init() {
-    
-    $('.main-gallery').flickity({
-      // options
-      cellAlign: 'left',
-          contain: true
-    });
     onScroll();
     resize();
     placeHeaderTxt();
@@ -43,6 +37,7 @@ $(document).ready(function() {
 
     //Hard code the relative background size
     $( ".landing" ).css( "height",  $( ".landing" ).height()); 
+
 
 
 
@@ -67,13 +62,20 @@ $(document).ready(function() {
 
     var headerHeight = $( ".landing" ).height();
     var textHeight = $( ".landing h1" ).height();
-    var availableSpace = 0.8 * (headerHeight - textHeight);
+
+
+    if ($body.hasClass('has-docked-nav')) {
+      var availableSpace = 0.78 * (headerHeight - textHeight);
+    }
+    else {
+        var availableSpace = 0.75 * (headerHeight - textHeight);
+    }
     //Position the title on the landing page
     $( ".landing h1" ).css( "padding-top",  availableSpace); 
     
     $body.removeClass('has-docked-nav')
     navOffsetTop = $nav.offset().top
-    onScroll()
+    onScroll();
 
       
   }
@@ -106,7 +108,6 @@ $(document).ready(function() {
     
     if($('.page-content h1').offset() != null) {
       
-
       if ($window.scrollTop() <= headerOffsetStart) {
           opac =  0.5 * $window.scrollTop()/headerOffsetStart;
       }
