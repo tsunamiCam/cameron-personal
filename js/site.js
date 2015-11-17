@@ -19,7 +19,13 @@ $(document).ready(function() {
 
     var width = $window.width()
     var height = $window.height()
+    
 
+    var headerOffsetStart = 0;
+    if($('.page-content h1').offset() != null) {
+        var headerOffsetStart = $('.page-content h1').offset().top + parseInt($('.page-content h1').css('padding-top').replace("px", ""));
+    }
+  
     
 
   function init() {
@@ -31,6 +37,13 @@ $(document).ready(function() {
 
     //Hard code the relative background size
     $( ".landing" ).css( "height",  $( ".landing" ).height()); 
+
+
+    $('.main-gallery').flickity({
+      // options
+      cellAlign: 'left',
+          contain: true
+    });
 
   }
 
@@ -81,12 +94,25 @@ $(document).ready(function() {
 
   function onScroll() {
 
+
     if(navOffsetTop <= $window.scrollTop() && !$body.hasClass('has-docked-nav')) {
       $body.addClass('has-docked-nav')
     }
     if(navOffsetTop > $window.scrollTop() && $body.hasClass('has-docked-nav')) {
       $body.removeClass('has-docked-nav')
     }
+
+    
+    if($('.page-content h1').offset() != null) {
+      
+   
+      if ($window.scrollTop() <= headerOffsetStart) {
+          opac =  0.5 * $window.scrollTop()/headerOffsetStart;
+      }
+      
+      $( ".page-content .navbar" ).css({'background': 'linear-gradient(rgba(0,0,0,' + opac + '),rgba(0,0,0,' + opac + '))'}); 
+    }
+    
   }
 
 
