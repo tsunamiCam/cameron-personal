@@ -485,10 +485,11 @@ img.bg{
     url('../images/revel-20-fullsize.jpg') top center no-repeat;
     background-size: cover;
     background-attachment: scroll;
-    width: relative;
-    height:50vh;
+
+    height:40em;
     padding-bottom: 0;
     margin-bottom: 0;
+
 
 
 }
