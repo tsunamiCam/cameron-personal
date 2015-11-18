@@ -9,7 +9,7 @@
 title: The Becky Tarbotton Memorial Scholarship
 email: info@dbeckytarbottonscholarship.org
 description: > # this means to ignore newlines until "baseurl:"
-			Supporting leadership and commitment in the fields of environmental and social justice
+Supporting leadership and commitment in the fields of environmental and social justice
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http:///beckytarbottonscholarship.org" # the base hostname & protocol for your site
 twitter_username: beckytarbottonscholarship
