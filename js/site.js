@@ -19,6 +19,7 @@ $(document).ready(function() {
 
     var width = $window.width()
     var height = $window.height()
+    var index = 0;
     
 
     var headerOffsetStart = 0;
@@ -32,16 +33,13 @@ $(document).ready(function() {
     onScroll();
     resize();
     placeHeaderTxt(".landing",0.75);
-    placeHeaderTxt(".post-header",0.85 );    
+    placeHeaderTxt(".post-header",0.9 );    
     $window.on('scroll', onScroll)
     $window.on('resize', resize)
 
     //Hard code the relative background size
     $( ".landing" ).css( "height",  $( ".landing" ).height()); 
-
     $( ".post-header" ).css( "height",  $( ".post-header" ).height()); 
-
-
 
   }
 
@@ -64,13 +62,13 @@ $(document).ready(function() {
 
     var headerHeight = $( parentClass ).height();
     var textHeight = $( parentClass + " h1" ).height();
-
+    var pHeight = $( parentClass + " p" ).height();
 
     if ($body.hasClass('has-docked-nav')) {
-      var availableSpace = spacingFactor * (headerHeight - textHeight);
+      var availableSpace = spacingFactor * (headerHeight - textHeight -pHeight);
     }
     else {
-        var availableSpace = spacingFactor * (headerHeight - textHeight);
+        var availableSpace = spacingFactor * (headerHeight - textHeight - pHeight);
     }
     //Position the title on the landing page
     $( parentClass + " h1" ).css( "padding-top",  availableSpace); 
@@ -99,6 +97,7 @@ $(document).ready(function() {
   }
 
   function onScroll() {
+
 
 
     if(navOffsetTop <= $window.scrollTop() && !$body.hasClass('has-docked-nav')) {

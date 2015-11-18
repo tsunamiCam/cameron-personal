@@ -444,11 +444,20 @@ footer p {
 
 .post-header h1 {
     padding-top: 10em;
+    padding-bottom: 0em;
+    margin-bottom: 0em;
+    font-weight: 400;
+
 }
 
 
 .post-header p {
-    padding-top: 10em;
+    margin-top: 0em;
+    padding-top: 0.45em;
+    font-weight: 500;
+    font-size: 1.2em;
+    color: #808080;
+
 }
 
 
