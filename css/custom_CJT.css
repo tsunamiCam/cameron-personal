@@ -38,11 +38,12 @@ blockquote p {
 }
 
 
+/*Figures and Captions*/
+
 figure {
 
         margin: 0em 0.5em 0em;
         padding-bottom: 1em;
-
 }
 
 figcaption {
@@ -54,6 +55,65 @@ figcaption {
     line-height: 1.6em;
     padding: 0em 0 1.5em 0;
 }
+
+
+/*Flickty Gallery styling */
+.main-gallery {
+
+  background: #f9f9f9;
+  margin-bottom: 1em;
+}
+
+.gallery-cell {
+  width: 100%;
+  background: #f9f9f9;
+  counter-increment: gallery-cell;
+}
+
+
+
+/* Slide in captions for the Flickity Galleries */
+.gallery-cell figcaption {
+  position: absolute;
+  background: black;
+  background: rgba(0,0,0,0.75);
+  color: white;
+  padding: 10px 20px;
+  opacity: 0;
+  -webkit-transition: all 0.6s ease;
+  -moz-transition:    all 0.6s ease;
+  -o-transition:      all 0.6s ease;
+}
+.gallery-cell:hover figcaption {
+  opacity: 1;
+}
+.gallery-cell:before {
+  content: "?";
+  position: absolute;
+  font-weight: 700;
+  background: black;
+  background: rgba(255,255,255,0.75);
+  text-shadow: 0 0 5px white;
+  color: black;
+  width: 25px;
+  height: 25px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius:    12px;
+  border-radius:         12px;
+  text-align: center;
+  font-size: 1.1em;
+
+  -moz-transition: all 0.6s ease;
+  opacity: 0.75;
+}
+.gallery-cell:hover:before {
+  opacity: 0;
+}
+
+.cap-bot:before { bottom: 20px; left: 15px; }
+.cap-bot figcaption { left: 0; bottom: 7px;}
+.cap-bot:hover figcaption { bottom: 7px }
+
 
 
 /* Landing Page header styling */
@@ -419,17 +479,7 @@ footer p {
 }
 
 
-.main-gallery {
 
-  background: #f9f9f9;
-  margin-bottom: 1em;
-}
-
-.gallery-cell {
-  width: 100%;
-  background: #f9f9f9;
-  counter-increment: gallery-cell;
-}
 
 .page-content h1 {
     color: #000;
@@ -472,6 +522,8 @@ footer p {
     color: #808080;
 
 }
+
+
 
 
 
