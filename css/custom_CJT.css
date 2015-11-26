@@ -41,9 +41,20 @@ blockquote p {
 figure {
 
         margin: 0em 0.5em 0em;
-        padding-bottom: 2em;
+        padding-bottom: 1em;
 
 }
+
+figcaption {
+    font-size: 0.9em;
+    font-style: italic;
+    color: #009be8;
+    font-weight: 500;
+    text-align: center;
+    line-height: 1.6em;
+    padding: 0em 0 1.5em 0;
+}
+
 
 /* Landing Page header styling */
 
@@ -392,10 +403,10 @@ footer p {
 .videoWrapper {
     position: relative;
     padding-bottom: 56.25%; /* 16:9 */
-
     height: 0;
     margin-top: 2em;
     margin-bottom: 2em;
+
 
 }
 .videoWrapper iframe {
@@ -404,12 +415,14 @@ footer p {
     left: 0;
     width: 100%;
     height: 100%;
+    
 }
 
 
 .main-gallery {
 
   background: #f9f9f9;
+  margin-bottom: 1em;
 }
 
 .gallery-cell {
