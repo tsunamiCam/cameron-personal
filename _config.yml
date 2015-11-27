@@ -10,11 +10,12 @@ title: The Becky Tarbotton Memorial Scholarship
 email: info@dbeckytarbottonscholarship.org
 description: Supporting leadership and commitment in the fields of environmental and social justice
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http:///beckytarbottonscholarship.org" # the base hostname & protocol for your site
+url: "http://beckytarbottonscholarship.org" # the base hostname & protocol for your site
 twitter_username: beckytarbottonscholarship
 github_username:  tsunamiCam
 fb_admins: "https://www.facebook.com/cameron.tarbotton"
 fb_appid: 1707383322824946
+
 
 # Build settings
 markdown: kramdown
