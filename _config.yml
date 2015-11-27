@@ -19,3 +19,7 @@ fb_appid: 1707383322824946
 
 # Build settings
 markdown: kramdown
+
+
+gems:
+  - jekyll-sitemap
