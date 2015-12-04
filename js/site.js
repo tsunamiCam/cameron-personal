@@ -1,5 +1,8 @@
 $(document).ready(function() {
 
+
+
+
   // Variables
   var $codeSnippets = $('.code-example-body'),
       $nav = $('.navbar'),
@@ -17,10 +20,13 @@ $(document).ready(function() {
         "/": '&#x2F;'
       }
 
-    var width = $window.width()
-    var height = $window.height()
+
+    var width = $window.width();
+    var height = $window.height();
     var index = 0;
-    
+
+    //Set the height of the background 
+    $( ".landing" ).css( "height",  height); 
 
     var headerOffsetStart = 0;
     if($('.post-header h1').offset() != null) {
