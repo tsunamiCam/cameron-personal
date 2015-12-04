@@ -28,10 +28,12 @@ $(document).ready(function() {
     //Set the height of the background 
     $( ".landing" ).css( "height",  height); 
 
+    
     var headerOffsetStart = 0;
     if($('.post-header h1').offset() != null) {
         var headerOffsetStart = $('.post-header h1').offset().top + parseInt($('.post-header h1').css('padding-top').replace("px", ""));
     }
+    
   
     
 
