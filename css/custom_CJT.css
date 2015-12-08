@@ -184,7 +184,7 @@ figcaption {
 
 /* The Scholarship */
 .scholarship {
-    padding: 2em 0 2em;
+    padding: 2em 0 0.5em;
     text-align: left;
 }
 
@@ -198,51 +198,19 @@ figcaption {
     font-size: 1.1em;
 }
 
+.scholarship .button {
+    font-size: 0.8em;
+    margin-right: 0.5em;
+     border-width: 1px ;
+
+}
+
+
+
 img {
     max-width: 100%;
     height: auto;
-}
 
-/* Testimonials */
-.testimonials {
-    padding: 4em 0;
-    text-align: center;
-}
-
-.testimonials h2 {
-    color: #009be8;
-    font-weight: 300;
-}
-
-.testimonials p {
-    color: #9d9d9d;
-    font-size: 1.2em;
-}
-
-.testimonials blockquote {
-    border: none;
-    text-align: left;
-    padding: 0 1.5em 0 0;
-    font-size: 1em;
-    color: #4d4d4d;
-    line-height: 1.4;
-    margin: 1em 0;
-}
-
-.testimonials .avatar img {
-    border-radius: 50%;
-    float: left;
-    display: inline;
-    margin-right: 1em;
-    width: 65px;
-    height: 65px;
-}
-
-.testimonials .avatar p {
-    text-align: left;
-    padding-top: 1em;
-    color: #5d5d5d;
-    font-weight: 900;
 }
 
 /* Apply Banner */
@@ -376,6 +344,7 @@ footer p {
 /* Dividing line */
 .dividing-line {
     border-top: 1px solid #eee;
+    padding-top: 0em;
     margin-bottom: 2rem;
 }
 
@@ -545,13 +514,13 @@ footer p {
 /*----- Section Titles -----*/
 .accordion-section-title {
     width:100%;
-    padding:15px;
+    padding:10px;
     display:inline-block;
     border-bottom:1px solid #C0C0C0  ;
     background:#E0E0E0 ;
     transition:all linear 0.1s;
     /* Type */
-    font-size:1.200em;
+    font-size:1em;
     color:#000;
     text-decoration:none;
 }
