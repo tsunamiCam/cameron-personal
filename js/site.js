@@ -46,9 +46,12 @@ $(document).ready(function() {
     $window.on('scroll', onScroll)
     $window.on('resize', resize)
 
+
     //Hard code the relative background size
     $( ".landing" ).css( "height",  $( ".landing" ).height()); 
     $( ".post-header" ).css( "height",  $( ".post-header" ).height()); 
+
+    moveProgressBar();
 
   }
 
@@ -102,6 +105,8 @@ $(document).ready(function() {
     navOffsetTop = $nav.offset().top
     onScroll()
   }
+
+  moveProgressBar();
    
   }
 
@@ -156,16 +161,26 @@ $(document).ready(function() {
     });
 
 
+    // SIGNATURE PROGRESS
+    function moveProgressBar() {
+      console.log("moveProgressBar");
+        var getPercent = ($('.progress-wrap').data('progress-percent') / 100);
+        var getProgressWrapWidth = $('.progress-wrap').width();
+        var progressTotal = getPercent * getProgressWrapWidth;
+        var animationLength = 2500;
+        
+
+    }
+
+
 
   init();
 
 });
 
 
-$(window).on('beforeload', function() {
-    alert("Test")
-    //$(window).scrollTop(0);
-});
+
+
 
 
 
