@@ -31,9 +31,19 @@ $(document).ready(function() {
     
     
     var headerOffsetStart = 0;
+    var transitionNavbar = 0;
+
     if($('.post-header h1').offset() != null) {
-        var headerOffsetStart = $('.post-header h1').offset().top + parseInt($('.post-header h1').css('padding-top').replace("px", ""));
+      var headerOffsetStart = $('.post-header h1').offset().top + parseInt($('.post-header h1').css('padding-top').replace("px", ""));
+      transitionNavbar = 1;
     }
+    
+    if($('.scholarship').offset() != null) {
+      var headerOffsetStart = $('.scholarship').offset().top + parseInt($('.scholarship').css('padding-top').replace("px", ""));
+      transitionNavbar = 1;
+
+    }
+    
     
   
     
@@ -51,7 +61,8 @@ $(document).ready(function() {
     $( ".landing" ).css( "height",  $( ".landing" ).height()); 
     $( ".post-header" ).css( "height",  $( ".post-header" ).height()); 
 
-    moveProgressBar();
+
+
 
   }
 
@@ -95,19 +106,18 @@ $(document).ready(function() {
 
   function resize() {
 
-  if ($window.width() != width) {
-      placeHeaderTxt(".landing", 0.75);
-      placeHeaderTxt(".post-header",0.8); 
-      width = $window.width()
+    if ($window.width() != width) {
+        placeHeaderTxt(".landing", 0.75);
+        placeHeaderTxt(".post-header",0.8); 
+        width = $window.width()
+      }
+    else {
+     $body.removeClass('has-docked-nav')
+      navOffsetTop = $nav.offset().top
+      onScroll()
     }
-  else {
-   $body.removeClass('has-docked-nav')
-    navOffsetTop = $nav.offset().top
-    onScroll()
-  }
 
-  moveProgressBar();
-   
+     
   }
 
   function onScroll() {
@@ -119,19 +129,23 @@ $(document).ready(function() {
     }
     if(navOffsetTop > $window.scrollTop() && $body.hasClass('has-docked-nav')) {
       $body.removeClass('has-docked-nav')
+
+      $( ".navbar" ).css({'background': 'linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0))'}); 
     }
 
     
-    if($('.post-header h1').offset() != null) {
-      
-      var opac = 0.5;
-      if ($window.scrollTop() <= headerOffsetStart) {
-          opac =  0.5 * $window.scrollTop()/headerOffsetStart;
-      }
-      
-      $( ".post-header .navbar" ).css({'background': 'linear-gradient(rgba(0,0,0,' + opac + '),rgba(0,0,0,' + opac + '))'}); 
-    }
+    if($body.hasClass('has-docked-nav') && transitionNavbar == 1) {
+
+      /*Grey the background of the Navbar as the user scrolls down the page*/
     
+
+        var opac = 0.5;
+        if ($window.scrollTop() <= headerOffsetStart) {
+            opac =  0.5 * $window.scrollTop()/headerOffsetStart;
+        } 
+
+          $( ".navbar" ).css({'background': 'linear-gradient(rgba(0,0,0,' + opac + '),rgba(0,0,0,' + opac + '))'}); 
+    }   
   }
 
 
@@ -161,16 +175,19 @@ $(document).ready(function() {
     });
 
 
-    // SIGNATURE PROGRESS
-    function moveProgressBar() {
-      console.log("moveProgressBar");
-        var getPercent = ($('.progress-wrap').data('progress-percent') / 100);
-        var getProgressWrapWidth = $('.progress-wrap').width();
-        var progressTotal = getPercent * getProgressWrapWidth;
-        var animationLength = 2500;
-        
 
-    }
+
+    /*Initialise the Navigation Bar*/
+    $("#nav-mobile").html($("#nav-main").html());
+    $("#nav-trigger span").click(function(){
+        if ($("nav#nav-mobile ul").hasClass("expanded")) {
+            $("nav#nav-mobile ul.expanded").removeClass("expanded").slideUp(250);
+            $(this).removeClass("open");
+        } else {
+            $("nav#nav-mobile ul").addClass("expanded").slideDown(250);
+            $(this).addClass("open");
+        }
+    });
 
 
 

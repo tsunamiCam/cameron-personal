@@ -12,6 +12,9 @@
 }
 
 
+
+
+
 /* Larger than phone */
 /*@media (min-width: 550px) {
     .header {
@@ -22,9 +25,7 @@
 /* Larger than tablet */
 @media (min-width: 750px) {
     /* Navbar */
-    .navbar + .docs-section {
-        border-top-width: 0;
-    }
+
 
     .navbar{
         display: block;
@@ -32,11 +33,9 @@
         height: 6.5rem;
         z-index: 99;
         margin-bottom: -6.5rem;
+
     }
 
-    .navbar > .container {
-        width: 100%;
-    }
 
     .navbar-list {
         list-style: none;
@@ -60,21 +59,15 @@
         color: #fff;
     }
 
-    .navbar-link.active {
-        color: #33C3F0;
-    }
 
     .has-docked-nav .navbar {
         position: fixed;
         top: 0;
-        left: 0;
+
+
 
     }
 
-    /* Re-overiding the width 100% declaration to match size of % based container */
-    .has-docked-nav .navbar > .container {
-        width: 80%;
-    }
 
     .landing {
         background: linear-gradient(
