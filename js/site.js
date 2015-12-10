@@ -54,11 +54,16 @@ $(document).ready(function() {
     
     //Reduce H1 font size for small devices
     if (width < 550) { 
+
       $( ".landing h1" ).css( "font-size",  "3em"); 
+      placeHeaderTxt(".landing",0.8);
+    }
+    else {
+      placeHeaderTxt(".landing",0.75);
     }
 
     //Place the header text
-    placeHeaderTxt(".landing",0.75);
+    
     placeHeaderTxt(".post-header",0.9 );    
     $window.on('scroll', onScroll)
     $window.on('resize', resize)

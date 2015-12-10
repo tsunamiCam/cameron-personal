@@ -23,15 +23,12 @@
   #nav-trigger span {
     display: inline-block;
     line-height: 0%;
-    color: white;
+    color: #D0D0D0 ;
     cursor: pointer;
     margin-top: 0;
-
     text-align: left;
     padding: 12px 4px 12px;
-    background: linear-gradient(
-            rgba(30, 0, 0, 0.8),
-            rgba(30, 0, 0, 0.8));
+
     } 
     #nav-trigger span:after {
       display: inline-block;
@@ -46,10 +43,11 @@
         margin-left: 6px;
         text-shadow: 50px 50px 50px #000;}
     #nav-trigger span:hover {
-      color:  #D0D0D0  ; }
+      color:  #A0A0A0   ; }
     #nav-trigger .open:after {
     content: "x"; 
     font-size: 3em;
+    color: white;
     margin-right: 20px;
           width: 20px;
       height: 10px;
