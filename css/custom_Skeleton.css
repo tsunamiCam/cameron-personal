@@ -46,7 +46,7 @@
         margin-left: 6px;
         text-shadow: 50px 50px 50px #000;}
     #nav-trigger span:hover {
-      color: #e6002d; }
+      color:  #D0D0D0  ; }
     #nav-trigger .open:after {
     content: "x"; 
     font-size: 3em;
@@ -75,7 +75,7 @@
             rgba(30, 0, 0, 0.8),
             rgba(30, 0, 0, 0.8));
         z-index: 99;
-        padding-top: 20px;
+        padding-top: 10px;
         }
     .navbar#nav-mobile li {
         display: block;
