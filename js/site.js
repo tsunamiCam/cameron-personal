@@ -63,7 +63,6 @@ $(document).ready(function() {
 
 
 
-
   }
 
   function smoothScroll(e) {
@@ -86,6 +85,8 @@ $(document).ready(function() {
     var headerHeight = $( parentClass ).height();
     var textHeight = $( parentClass + " h1" ).height();
     var pHeight = $( parentClass + " p" ).height();
+
+
 
     if ($body.hasClass('has-docked-nav')) {
       var availableSpace = spacingFactor * (headerHeight - textHeight -pHeight);
@@ -176,17 +177,26 @@ $(document).ready(function() {
 
 
 
+  function toggleNavbarMenu() {
+
+
+        if ($("nav#nav-mobile ul").hasClass("expanded")) {
+            $("nav#nav-mobile ul.expanded").removeClass("expanded").slideUp(250);
+            $("#nav-trigger span").removeClass("open");
+        } else {
+            $("nav#nav-mobile ul").addClass("expanded").slideDown(250);
+            $("#nav-trigger span").addClass("open");
+        }
+
+  }
+
+
 
     /*Initialise the Navigation Bar*/
     $("#nav-mobile").html($("#nav-main").html());
+
     $("#nav-trigger span").click(function(){
-        if ($("nav#nav-mobile ul").hasClass("expanded")) {
-            $("nav#nav-mobile ul.expanded").removeClass("expanded").slideUp(250);
-            $(this).removeClass("open");
-        } else {
-            $("nav#nav-mobile ul").addClass("expanded").slideDown(250);
-            $(this).addClass("open");
-        }
+      toggleNavbarMenu();
     });
 
 

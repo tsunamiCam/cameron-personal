@@ -9,6 +9,7 @@ body {
 }
 
 
+
 /* Blockquote styling */
 
 blockquote {
@@ -541,28 +542,6 @@ footer p {
     padding:15px;
     display:none;
 }
-
-
-/*----- Donation progress bar -----*/
-.progress {
-  width: 100%;
-  height: 50px;
-}
-.progress-wrap {
-  background: #f80;
-  margin: 20px 0;
-  overflow: hidden;
-  position: relative;
-  width: 80%;
-  .progress-bar {
-    background: #ddd;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-  }
-}
-
 
 
 
