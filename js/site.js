@@ -124,13 +124,11 @@ $(document).ready(function() {
   function onScroll() {
 
 
-
     if(navOffsetTop <= $window.scrollTop() && !$body.hasClass('has-docked-nav')) {
       $body.addClass('has-docked-nav')
     }
     if(navOffsetTop > $window.scrollTop() && $body.hasClass('has-docked-nav')) {
       $body.removeClass('has-docked-nav')
-
       $( ".navbar" ).css({'background': 'linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0))'}); 
     }
 
@@ -138,15 +136,13 @@ $(document).ready(function() {
     if($body.hasClass('has-docked-nav') && transitionNavbar == 1) {
 
       /*Grey the background of the Navbar as the user scrolls down the page*/
-    
-
         var opac = 0.5;
         if ($window.scrollTop() <= headerOffsetStart) {
             opac =  0.5 * $window.scrollTop()/headerOffsetStart;
         } 
-
           $( ".navbar" ).css({'background': 'linear-gradient(rgba(0,0,0,' + opac + '),rgba(0,0,0,' + opac + '))'}); 
-    }   
+    } 
+
   }
 
 
