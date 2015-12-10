@@ -56,7 +56,7 @@ $(document).ready(function() {
     if (width < 550) { 
 
       $( ".landing h1" ).css( "font-size",  "3em"); 
-      placeHeaderTxt(".landing",0.8);
+      placeHeaderTxt(".landing",0.75);
     }
     else {
       placeHeaderTxt(".landing",0.75);
