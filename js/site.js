@@ -51,6 +51,13 @@ $(document).ready(function() {
   function init() {
     onScroll();
     resize();
+    
+    //Reduce H1 font size for small devices
+    if (width < 550) { 
+      $( ".landing h1" ).css( "font-size",  "3em"); 
+    }
+
+    //Place the header text
     placeHeaderTxt(".landing",0.75);
     placeHeaderTxt(".post-header",0.9 );    
     $window.on('scroll', onScroll)
@@ -88,6 +95,7 @@ $(document).ready(function() {
 
 
 
+    
     if ($body.hasClass('has-docked-nav')) {
       var availableSpace = spacingFactor * (headerHeight - textHeight -pHeight);
     }
