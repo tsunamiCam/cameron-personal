@@ -27,32 +27,29 @@
     cursor: pointer;
     margin-top: 0;
     text-align: left;
-    padding: 12px 4px 12px;
-
-    } 
+    padding: 12px 4px 12px;} 
+    #nav-trigger span:hover {
+        color: #009be8 ; }
     #nav-trigger span:after {
-      display: inline-block;
-      font-size: 4em;
-      margin-left: 0px;
-      width: 20px;
-      height: 10px;
-      content: "≡"; 
-      padding-top: 5px;
+        display: inline-block;
+        font-size: 4em;
+        margin-left: 0px;
+        width: 20px;
+        height: 10px;
+        content: "≡"; 
+        padding-top: 5px;
         margin-top: 10px;
         margin-right: 20px;
         margin-left: 6px;
         text-shadow: 50px 50px 50px #000;}
-    #nav-trigger span:hover {
-      color:  #A0A0A0   ; }
     #nav-trigger .open:after {
-    content: "x"; 
-    font-size: 3em;
-    color: white;
-    margin-right: 20px;
-          width: 20px;
-      height: 10px;
+        content: "x"; 
+        font-size: 3em;
+        color: white;
+        margin-right: 20px;
+        width: 20px;
+        height: 10px;}
 
- }
 
 
 
@@ -74,6 +71,8 @@
             rgba(30, 0, 0, 0.8));
         z-index: 99;
         padding-top: 10px;
+        padding-bottom: 10px;
+
         }
     .navbar#nav-mobile li {
         display: block;
@@ -88,10 +87,7 @@
         padding: 10px 30px; 
         text-decoration: none;}
         .navbar#nav-mobile a:hover {
-          background: linear-gradient(
-            rgba(0, 0, 0, 0.95),
-            rgba(0, 0, 0, 0.95));
-          color: #fff; 
+          color: #009be8; 
           }
 
 
@@ -100,7 +96,8 @@
     position: relative;
     width: 100%;
     height: 6.5rem;
-    margin-bottom: -6.5rem;}
+    margin-bottom: -6.5rem;
+    z-index: 99;}
 
     .navbar#nav-main ul {
         list-style: none;
@@ -118,6 +115,9 @@
         text-decoration: none;
         line-height: 6.5rem;
         color: #fff;}
+    .navbar#nav-main a:hover {
+        color: #009be8; 
+          }
 
     .has-docked-nav .navbar#nav-main {
         position: fixed;
