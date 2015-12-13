@@ -12,7 +12,6 @@ description: Supporting leadership and commitment in the fields of environmental
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://beckytarbottonscholarship.org" # the base hostname & protocol for your site
 twitter_username: beckyscholar
-github_username:  tsunamiCam
 fb_admins: "https://www.facebook.com/cameron.tarbotton"
 fb_appid: 1707383322824946
 
@@ -23,3 +22,4 @@ markdown: kramdown
 
 gems:
   - jekyll-sitemap
+  - jekyll-email-protect
