@@ -14,7 +14,9 @@ url: "http://beckytarbottonscholarship.org" # the base hostname & protocol for y
 twitter_username: beckyscholar
 fb_admins: "https://www.facebook.com/cameron.tarbotton"
 fb_appid: 1707383322824946
-gems: [jekyll-sitemap, jekyll-email-protect]
+gems:
+- jekyll-email-protect
+- jekyll-sitemap
 
 
 # Build settings
