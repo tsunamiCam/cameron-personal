@@ -23,13 +23,13 @@
   #nav-trigger span {
     display: inline-block;
     line-height: 0%;
-    color: #D0D0D0 ;
+    color: #FFFFCC ;
     cursor: pointer;
     margin-top: 0;
     text-align: left;
     padding: 12px 4px 12px;} 
     #nav-trigger :hover {
-        color: #009be8 ; }
+        color: #2C3539 ; }
     #nav-trigger span:after {
         display: inline-block;
         font-size: 4em;
@@ -72,6 +72,7 @@
         padding-top: 10px;
         padding-bottom: 10px;
 
+
         }
     .navbar#nav-mobile li {
         display: block;
@@ -84,9 +85,10 @@
         display: block;
         color: white;
         padding: 10px 30px; 
-        text-decoration: none;}
+        text-decoration: none;
+            color: #FFFFCC;}
         .navbar#nav-mobile a:hover {
-          color: #009be8; 
+          color: #2C3539; 
           }
 
 
@@ -113,9 +115,9 @@
         margin-right: 35px;
         text-decoration: none;
         line-height: 6.5rem;
-        color: #fff;}
+        color: #FFFFCC;}
     .navbar#nav-main a:hover {
-        color: #009be8; 
+        color: #2C3539; 
           }
 
     .has-docked-nav .navbar#nav-main {
@@ -158,9 +160,9 @@
         background: linear-gradient(
                 rgba(50, 0, 0, 0.25),
                 rgba(50, 0, 0, 0.25)),
-        url('../images/revel-20-fullsize.jpg') top center no-repeat;
+        url('../images/sea.jpg') top center no-repeat;
         background-size: cover;
-        background-attachment: fixed;
+        background-attachment: scroll;
 
     }
 
@@ -170,7 +172,7 @@
         background: linear-gradient(
             rgba(0, 0, 0, 0),
             rgba(255, 255, 255, 1)),
-        url('../images/revel-20-fullsize.jpg') top center no-repeat;
+        url('../images/sea.jpg') top center no-repeat;
         background-size: cover;
         background-attachment: scroll;
     } 

@@ -56,10 +56,10 @@ $(document).ready(function() {
     if (width < 550) { 
 
       $( ".landing h1" ).css( "font-size",  "3em"); 
-      placeHeaderTxt(".landing",0.75);
+      placeHeaderTxt(".landing",0.6);
     }
     else {
-      placeHeaderTxt(".landing",0.75);
+      placeHeaderTxt(".landing",0.6);
     }
 
     //Place the header text
@@ -121,7 +121,7 @@ $(document).ready(function() {
   function resize() {
 
     if ($window.width() != width) {
-        placeHeaderTxt(".landing", 0.75);
+        placeHeaderTxt(".landing", 0.6);
         placeHeaderTxt(".post-header",0.8); 
         width = $window.width()
       }

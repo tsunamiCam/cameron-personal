@@ -2,11 +2,22 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /*Body Text - override Skeleton default (Raleway) */
 
+
+@font-face {
+    font-family: PierSans   ;
+    src: url('../fonts/MODERNESANS/MODERNESANS.ttf');
+}
+
+
+
+
 body {
-    /*font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
-    font-family: "Work Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-family: 'Gentium Book Basic', serif;
+    /*font-family: "Work Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; */
     /*font-family: "Lato", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
 }
+
+
 
 
 
@@ -124,7 +135,7 @@ figcaption {
     background: linear-gradient(
             rgba(50, 0, 0, 0.25),
             rgba(50, 0, 0, 0.25)),
-    url('../images/revel-20-mobile3.jpg') top center no-repeat;
+    url('../images/sea.jpg') top center no-repeat;
     background-size: cover;
     background-attachment: scroll;
     height: 100vh;
@@ -132,14 +143,36 @@ figcaption {
 
 
 
+
 .landing h1 {
-    color: #fff;
+     /*color: #2C3539;*/
+    /*color: #FFF;    */
+    color: #FFFFCC;
     font-weight: 400;
     font-size: 5rem;
-    line-height: 1;
+    line-height: 1.2;
+    font-family: PierSans;
     /*text-shadow: 0 1px 2px #000;*/
     margin-bottom: 0.1em;
     padding-top: 30em;
+
+    letter-spacing: 10px;
+
+    
+}
+
+
+.landing p {
+    color: #545D61;
+    font-weight: 400;
+    font-size: 1.75rem;
+    line-height: 1.2;
+
+    /*text-shadow: 0 1px 2px #000;*/
+    margin-bottom: 0.1em;
+    font-family: PierSans;
+    padding-top: 3.5em;
+    letter-spacing: 2px;
 
     
 }
@@ -161,13 +194,6 @@ figcaption {
 
 
 
-.landing p {
-    color: #fff;
-    font-size: 1.33em;
-    line-height: 1.5;
-    /*text-shadow: 0 1px 2px #000;*/
-    margin-bottom: 1.2em;
-}
 
 .landing p strong {
     color: #fff;
@@ -190,12 +216,14 @@ figcaption {
 }
 
 .scholarship h2 {
-    color: #009be8;
+    color: #2C3539;
     font-weight: 300;
+    font-family: PierSans;
+
 }
 
 .scholarship p {
-    color: #9d9d9d;
+    color: #707070;
     font-size: 1.1em;
 }
 
@@ -215,54 +243,30 @@ img {
 }
 
 /* Apply Banner */
-.apply_banner {
+.section_title {
     background: linear-gradient(
-            rgba(255, 255, 255, 0.1),
-            rgba(255, 255, 255, 0.1)),
-    url('../images/helliwell2.jpg') top center no-repeat;
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 0)),
+    url('../images/sea-banner2.jpg') top center no-repeat;
     background-size: cover;
     width: 100%;
-    padding-top: 7em;
-    padding-bottom: 7em;
-    text-align: center;
+    padding-top: 4em;
+    padding-bottom: 2em;
+    text-align: left;
     opacity: 60%;
+
+    vertical-align: middle;
 }
 
-.apply_banner h2 {
-    color: #fff;
+.section_title h2 {
+    
+    font-family: PierSans;
+    color: #FFFFCC;
     font-weight: 500;
 }
 
-.apply_banner p {
-    color: #fff;
-    font-size: 1.2em;
-}
 
-.apply_banner .row {
-    margin-top: 3em;
-}
 
-.apply_banner ul li a {
-    color: #fff;
-    font-size: 1.5em;
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 0.75em 2em;
-    font-weight: 400;
-}
-
-.apply_banner ul li a.btn {
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
-    border-radius: 4px; /* border radius */
-    border: 3px solid #fff;
-}
-
-.apply_banner ul li a.btn:hover {
-    background: #fff;
-    color: #000;
-
-}
 
 /* Footer */
 footer {
@@ -344,8 +348,9 @@ footer p {
 
 /* Dividing line */
 .dividing-line {
-    border-top: 1px solid #eee;
+    border-top: 0.2em solid #A0A0A0;
     padding-top: 0em;
+    width: 4em;
     margin-bottom: 2rem;
 }
 
@@ -448,7 +453,7 @@ footer p {
     background: linear-gradient(
         rgba(0, 0, 0, 0),
         rgba(255, 255, 255, 1)),
-    url('../images/revel-20-mobile3.jpg') top center no-repeat;
+    url('../images/sea.jpg') top center no-repeat;
     background-size: cover;
     background-attachment: scroll;
 
@@ -465,6 +470,9 @@ footer p {
     padding-bottom: 0em;
     margin-bottom: 0em;
     font-weight: 400;
+
+        font-family: PierSans;
+
 
 }
 
