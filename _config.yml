@@ -23,3 +23,7 @@ gems:
 markdown: kramdown
 
 
+exclude:
+  - "bower_components"
+  - "bower.json"
+
