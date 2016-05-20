@@ -173,7 +173,7 @@ html, body {
     background: linear-gradient(
             rgba(50, 0, 0, 0.25),
             rgba(50, 0, 0, 0.25)),
-    url('../images/sea_original.jpg') no-repeat;
+    url('../images/sea_original_small.jpg') no-repeat;
     background-position: 50% 50%; 
 
     /*background-position:bottom right;*/
@@ -191,7 +191,7 @@ html, body {
     color: #FFFFCC;
     font-weight: 400;
     /*font-size: 4rem;*/
-    font-size: 6vmin;
+    font-size: 7vmin;
     line-height: 1.2;
     font-family: PierSans;
     letter-spacing: 10px;
@@ -204,7 +204,7 @@ html, body {
 #wrapper p {
     color: #545D61;
     font-weight: 400;
-    font-size: 2vmin;
+    font-size: 3vmin;
     line-height: 1.4;
     margin-bottom: 0.1em;
     font-family: PierSans;

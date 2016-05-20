@@ -153,6 +153,31 @@
     }
 
 
+#wrapper h1 {
+
+    border:0px;
+    padding:42vh 0 0 0;
+    margin:0px;
+    text-align: left;
+    color: #FFFFCC;
+    font-weight: 400;
+    /*font-size: 4rem;*/
+    font-size: 6vmin;
+    line-height: 1.2;
+    font-family: PierSans;
+    letter-spacing: 10px;
+
+}
+
+
+
+
+#wrapper p {
+
+    font-size: 2vmin;
+
+
+}
 
 
 
