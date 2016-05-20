@@ -175,7 +175,7 @@ html, body {
             rgba(50, 0, 0, 0.25),
             rgba(50, 0, 0, 0.25)),
     url('../images/sea_original_small.jpg') no-repeat;
-    background-position: 50% 50%; 
+    background-position: center 80%; 
 
     /*background-position:bottom right;*/
     background-size:cover;
@@ -185,13 +185,13 @@ html, body {
 }
 .landing2 h1 {
 
-    padding:42vh 0 0 0;
+    padding:65vh 0 0 0;
     margin:0px;
     text-align: left;
     color: #FFFFCC;
     font-weight: 400;
     /*font-size: 4rem;*/
-    font-size: 7vmin;
+    font-size: 8vmin;
     line-height: 1.2;
     font-family: PierSans;
     letter-spacing: 10px;
@@ -206,16 +206,21 @@ html, body {
     color: #545D61;
     font-weight: 400;
     font-size: 3vmin;
-
     margin-bottom: 0.1em;
     font-family: PierSans;
-    padding-top: 9vh;
+    padding-top: 0em;
     padding-left: 0.5em;
     letter-spacing: 2px;
     text-align: left;
 
 }
 
+
+.hr_style1 {
+    margin: 0.5rem;
+    padding: 0;
+
+}
 
 
 .site-header {

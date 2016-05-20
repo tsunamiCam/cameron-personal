@@ -163,7 +163,7 @@
 .landing2 h1 {
 
     border:0px;
-    padding:41vh 0 0 0;
+    padding:65vh 0 0 0;
     margin:0px;
     text-align: left;
     color: #FFFFCC;
@@ -172,7 +172,7 @@
     font-size: 6vmin;
     line-height: 1.2;
     font-family: PierSans;
-    letter-spacing: 10px;
+    letter-spacing: 1.5rem;
 
 }
 
