@@ -128,6 +128,7 @@
 
 
 
+
 /* Larger than phone */
 /*@media (min-width: 550px) {
     .header {
@@ -136,7 +137,7 @@
 }
 */  
 /* Larger than tablet */
-@media (min-width: 750px) {
+@media (min-width: 500px) {
     /* Navbar */
 
   #nav-trigger {
@@ -160,7 +161,7 @@
         background: linear-gradient(
                 rgba(50, 0, 0, 0.25),
                 rgba(50, 0, 0, 0.25)),
-        url('../images/sea.jpg') top center no-repeat;
+        url('../images/sea_original.jpg') top center no-repeat;
         background-size: cover;
         background-attachment: scroll;
 

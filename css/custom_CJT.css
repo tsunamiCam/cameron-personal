@@ -147,6 +147,77 @@ figcaption {
 /* Landing Page header styling */
 
 
+.name {/* other spans to position through coordonates as well */
+  position: absolute;
+  top: 100%;
+  left: 0%;
+}
+
+
+html, body {
+    margin:0;
+    padding:0;
+    border:none;
+    height:100%;
+    width:100%;
+
+}
+#wrapper {
+    min-height:100%;
+    min-width:100%;
+    position:relative;
+    margin:0;
+    padding:0;
+    text-align:center;
+    color:#FFFFFF;
+    background: linear-gradient(
+            rgba(50, 0, 0, 0.25),
+            rgba(50, 0, 0, 0.25)),
+    url('../images/sea_original.jpg') no-repeat;
+    background-position: 50% 50%; 
+
+    /*background-position:bottom right;*/
+    background-size:cover;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+}
+#wrapper h1 {
+
+    border:0px;
+    padding:42vh 0 0 0;
+    margin:0px;
+    text-align: left;
+    color: #FFFFCC;
+    font-weight: 400;
+    /*font-size: 4rem;*/
+    font-size: 6vmin;
+    line-height: 1.2;
+    font-family: PierSans;
+    letter-spacing: 10px;
+
+}
+
+
+
+
+#wrapper p {
+    color: #545D61;
+    font-weight: 400;
+    font-size: 2vmin;
+    line-height: 1.4;
+    margin-bottom: 0.1em;
+    font-family: PierSans;
+    padding-top: 11vh;
+    padding-left: 0.5em;
+    letter-spacing: 2px;
+    text-align: left;
+
+}
+
+
+
+
 .landing {
     background: linear-gradient(
             rgba(50, 0, 0, 0.25),
@@ -155,8 +226,8 @@ figcaption {
     background-size: cover;
     background-attachment: scroll;
     height: 100vh;
-}
 
+}
 
 
 
@@ -170,9 +241,8 @@ figcaption {
     font-family: PierSans;
     /*text-shadow: 0 1px 2px #000;*/
     margin-bottom: 0.1em;
-    padding-top: 30em;
-
     letter-spacing: 10px;
+    position: absolute;
 
     
 }
