@@ -93,21 +93,7 @@ new Chartist.Line('.ct-chart', data, options);
   function init() {
     onScroll();
     resize();
-    
-    //Reduce H1 font size for small devices
-    /*
-    if (width < 550) { 
-
-      $( ".landing h1" ).css( "font-size",  "3em"); 
-      placeHeaderTxt(".landing",0.6);
-    }
-    else {
-      placeHeaderTxt(".landing",0.6);
-    }*/
-
-    //Place the header text
-    
-    //placeHeaderTxt(".post-header",0.9 );    
+     
     $window.on('scroll', onScroll)
     $window.on('resize', resize)
 

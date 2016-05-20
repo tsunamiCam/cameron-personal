@@ -55,7 +55,8 @@
 
 .navbar#nav-mobile { 
     z-index: 99;
-    font-family: PierSans;}
+    font-family: PierSans;
+    }
 
 
     .navbar#nav-mobile ul {
@@ -114,13 +115,12 @@
         margin-bottom: 0;}
     .navbar#nav-main a {
         text-transform: uppercase;
-        font-size: 13px;
-        font-weight: 600;
-        letter-spacing: .15rem;
+        font-size: 2vmin;
+        letter-spacing: .2rem;
         margin-right: 35px;
         text-decoration: none;
         line-height: 6.5rem;
-        color: #FFFFCC;}
+        color: #3A3A38;}
     .navbar#nav-main a:hover {
         color: #2C3539; 
           }
@@ -129,7 +129,9 @@
         position: fixed;
         top: 0;
     }
-
+    .has-docked-nav .navbar#nav-main a{
+        color: #CDCDC1;
+    }
 
 
 
@@ -158,7 +160,7 @@
     }
 
 
-.landing h1 {
+.landing2 h1 {
 
     border:0px;
     padding:41vh 0 0 0;
@@ -175,9 +177,7 @@
 }
 
 
-
-
-.landing p {
+.landing2 p {
 
     font-size: 2vmin;
 
@@ -185,18 +185,6 @@
 }
 
 
-
-    /*
-    .landing {
-        background: linear-gradient(
-                rgba(50, 0, 0, 0.25),
-                rgba(50, 0, 0, 0.25)),
-        url('../images/sea_original.jpg') top center no-repeat;
-        background-size: cover;
-        background-attachment: scroll;
-
-    }
-    */
 
     .post-header {
 
@@ -209,12 +197,7 @@
     } 
 
 
-    /*
-    .landing h1 {
-        font-size: 6rem ;
-    }
-    */
-
+ 
     /*Adjust figure margins for large devices*/
     figure {
 
