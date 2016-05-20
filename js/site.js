@@ -162,7 +162,7 @@ new Chartist.Line('.ct-chart', data, options);
 
   function resize() {
 
-    /*
+    
     if ($window.width() != width) {
         placeHeaderTxt(".landing", 0.6);
         placeHeaderTxt(".post-header",0.8); 
@@ -173,7 +173,7 @@ new Chartist.Line('.ct-chart', data, options);
       navOffsetTop = $nav.offset().top
       onScroll()
     }
-*/
+
      
   }
 

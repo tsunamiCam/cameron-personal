@@ -162,7 +162,8 @@ html, body {
     width:100%;
 
 }
-#wrapper {
+.wrapper {
+    
     min-height:100%;
     min-width:100%;
     position:relative;
@@ -182,9 +183,11 @@ html, body {
     -moz-background-size:cover;
     -o-background-size:cover;
 }
-#wrapper h1 {
-
-    border:0px;
+.wrapper h1 {
+    border-style:solid;
+    border-color:#287EC7;
+    border:10px;
+    padding: 3em;
     padding:42vh 0 0 0;
     margin:0px;
     text-align: left;
@@ -196,12 +199,13 @@ html, body {
     font-family: PierSans;
     letter-spacing: 10px;
 
+
 }
 
 
 
 
-#wrapper p {
+.wrapper p {
     color: #545D61;
     font-weight: 400;
     font-size: 3vmin;
@@ -232,14 +236,13 @@ html, body {
 
 
 .landing h1 {
-     /*color: #2C3539;*/
-    /*color: #FFF;    */
+
     color: #FFFFCC;
     font-weight: 400;
     font-size: 5rem;
     line-height: 1.2;
     font-family: PierSans;
-    /*text-shadow: 0 1px 2px #000;*/
+
     margin-bottom: 0.1em;
     letter-spacing: 10px;
     position: absolute;
@@ -253,8 +256,6 @@ html, body {
     font-weight: 400;
     font-size: 1.75rem;
     line-height: 1.2;
-
-    /*text-shadow: 0 1px 2px #000;*/
     margin-bottom: 0.1em;
     font-family: PierSans;
     padding-top: 3.5em;
