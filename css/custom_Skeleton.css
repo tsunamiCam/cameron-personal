@@ -115,12 +115,12 @@
         margin-bottom: 0;}
     .navbar#nav-main a {
         text-transform: uppercase;
-        font-size: 2vmin;
+         font-size:0em;
         letter-spacing: .2rem;
         margin-right: 35px;
         text-decoration: none;
         line-height: 6.5rem;
-        color: #3A3A38;}
+        color: #EAEAAE;}
     .navbar#nav-main a:hover {
         color: #2C3539; 
           }
@@ -144,7 +144,7 @@
 }
 */  
 /* Larger than tablet */
-@media (min-width: 500px) {
+@media (min-width: 750px) {
     /* Navbar */
 
   #nav-trigger {
@@ -169,7 +169,8 @@
     color: #FFFFCC;
     font-weight: 400;
     /*font-size: 4rem;*/
-    font-size: 6vmin;
+    /*font-size: 5vmax;*/
+    font-size:0em;
     line-height: 1.2;
     font-family: PierSans;
     letter-spacing: 1.5rem;
@@ -179,7 +180,7 @@
 
 .landing2 p {
 
-    font-size: 2vmin;
+    f font-size:0em;
 
 
 }

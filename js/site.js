@@ -65,7 +65,11 @@ new Chartist.Line('.ct-chart', data, options);
 
     var width = $window.width();
     var height = $window.height();
+
+    var widthContainer = $( ".landing2 .container" ).css('width').replace("px", "")
+
     var index = 0;
+
 
     //Set the height of the background 
     $( ".landing" ).css( "height",  height); 
@@ -98,9 +102,9 @@ new Chartist.Line('.ct-chart', data, options);
     $window.on('resize', resize)
 
 
-    //Hard code the relative background size
-    $( ".landing" ).css( "height",  $( ".landing" ).height()); 
-    $( ".post-header" ).css( "height",  $( ".post-header" ).height()); 
+
+ 
+
 
 
 
@@ -149,7 +153,24 @@ new Chartist.Line('.ct-chart', data, options);
 
   function resize() {
 
+
+    height = $window.height();
+    widthContainer = $( ".landing2 .container" ).css('width').replace("px", "")
     
+    if(height > widthContainer) {
+      $( ".landing2 h1" ).css( "font-size", height*0.05); 
+      $( ".navbar#nav-main a" ).css( "font-size", height*0.02); 
+
+
+    }else{
+      $( ".landing2 h1" ).css( "font-size", widthContainer*0.05); 
+      $( ".navbar#nav-main a" ).css( "font-size", widthContainer*0.02); 
+
+    }
+    
+
+
+
     if ($window.width() != width) {
         placeHeaderTxt(".landing", 0.6);
         placeHeaderTxt(".post-header",0.8); 
