@@ -65,8 +65,12 @@ new Chartist.Line('.ct-chart', data, options);
 
     var width = $window.width();
     var height = $window.height();
+    var heightContainer = $( ".landing2 .container" ).css('height').replace("px", "");
+    var widthContainer = $( ".landing2 .container" ).css('width').replace("px", "");
+    var bg = jQuery(".landing2");
 
-    var widthContainer = $( ".landing2 .container" ).css('width').replace("px", "")
+
+    resizeBackground();
 
     var index = 0;
 
@@ -100,13 +104,6 @@ new Chartist.Line('.ct-chart', data, options);
      
     $window.on('scroll', onScroll)
     $window.on('resize', resize)
-
-
-
- 
-
-
-
 
   }
 
@@ -151,26 +148,28 @@ new Chartist.Line('.ct-chart', data, options);
   }
 
 
+function resizeBackground() {
+        bg.height(jQuery(window).height());
+    }
+
   function resize() {
 
+    resizeBackground();
 
-    height = $window.height();
+    heightContainer = $( ".landing2 .container" ).css('height').replace("px", "")
     widthContainer = $( ".landing2 .container" ).css('width').replace("px", "")
     
-    if(height > widthContainer) {
-      $( ".landing2 h1" ).css( "font-size", height*0.055); 
-      $( ".navbar#nav-main a" ).css( "font-size", height*0.02); 
+    if(heightContainer > widthContainer) {
+      $( ".landing2 h1" ).css( "font-size", heightContainer*0.07); 
+      $( ".navbar#nav-main a" ).css( "font-size", heightContainer*0.02); 
 
 
     }else{
-      $( ".landing2 h1" ).css( "font-size", widthContainer*0.05); 
+      $( ".landing2 h1" ).css( "font-size", widthContainer*0.06); 
       $( ".navbar#nav-main a" ).css( "font-size", widthContainer*0.02); 
 
     }
     
-
-
-
     if ($window.width() != width) {
         placeHeaderTxt(".landing", 0.6);
         placeHeaderTxt(".post-header",0.8); 
