@@ -158,7 +158,7 @@ new Chartist.Line('.ct-chart', data, options);
     widthContainer = $( ".landing2 .container" ).css('width').replace("px", "")
     
     if(height > widthContainer) {
-      $( ".landing2 h1" ).css( "font-size", height*0.05); 
+      $( ".landing2 h1" ).css( "font-size", height*0.055); 
       $( ".navbar#nav-main a" ).css( "font-size", height*0.02); 
 
 
